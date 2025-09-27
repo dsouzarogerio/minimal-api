@@ -1,0 +1,76 @@
+# VSCode
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.nfs*
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Entity Framework
+migrations/
+*.mdf
+*.ldf
+
+# Logs
+*.log
+
+# Others
+*.swp
+*.tmp
+*.bak
+*.orig
+
+# Rider
+.idea/
+*.sln.iml
+
+# Visual Studio
+.vs/
+
+# NuGet
+*.nupkg
+.nuget/
+
+# Test results
+TestResults/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+
+# Publish
+publish/
+
+# Coverage
+coverage/
+
+# Database
+*.db
+
+# Secrets
+secrets.json
+
+# OS generated files
+ehthumbs.db
+Thumbs.db
