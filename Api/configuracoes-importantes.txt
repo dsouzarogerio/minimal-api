@@ -1,0 +1,25 @@
+1. Infraestrutura de Dados
+ A. Crie o arquivo de Contexto do banco de dados (DbContexto) que herda de DbContext
+ B. Configure a String de Conexão do banco de dados no appsettings.json
+ C. Configure o builder para conexão no Program.cs
+ D. Valide se o Entity Framework está instalado no computador, comando:
+    - dotnet ef --version
+    Caso não:
+    - dotnet tool install --global dotnet-ef
+E. Execute o comando Migrations para criar a tabela no banco de dados
+    - dotnet ef migrations add AdministradorMigration
+F. Após compilação, confira se o diretorio Migrations foi criado no projeto.
+G. Aplique o migration no banco de dados:
+    -dotnet ef database update
+
+2. Usando SEED para adicionar um usuário Administrador
+A. Crie o objeto Administrador usando ModelBuilder no DbContexto
+B. Execute o comando para inserir os dados no banco de dados
+    - dotnet ef migrations add SeedAdministrador
+C. Execute o update para de fato fazer o insert do Administrador no banco de dados
+    - dotnet ef database update
+D. Valide se os dados foram inseridos no banco de dados
+    - Comandos:
+        - mysql -u root -p
+        - use minimal_api;
+        - select * from Administradores;
